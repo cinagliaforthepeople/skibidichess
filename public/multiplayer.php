@@ -379,7 +379,7 @@ if (!$sessionChecker->checkSession())
             connectionOverlay.style.display = 'flex';
             updateConnectionStatus('Connecting to our servers...', 'Please wait while we establish a secure connection');
             // CAMBIARE IP PER TESTARE
-            ws = new WebSocket('ws://localhost:9000');
+            ws = new WebSocket('ws://89.36.211.130:9000');
             // Gestisce l'apertura della connessione
             ws.onopen = () => {
                 console.log('Connessione WebSocket stabilita');
