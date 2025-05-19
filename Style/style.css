@@ -1,0 +1,195 @@
+@import "tailwindcss";
+
+
+
+@layer components {
+
+
+    @font-face {
+        font-family: jetBrains;
+        src: url("../Assets/Fonts/JetBrainsMono-Regular.ttf");
+    }
+
+    body {
+        font-family: jetBrains;
+        font-size: small;
+    }
+
+    .GreenBtn {
+        border: none;
+        outline: none;
+        background-color: #7FB44A;
+        padding: 10px 20px;
+        font-size: 12px;
+        font-weight: 700;
+        color: #fff;
+        border-radius: 5px;
+        transition: all ease 0.1s;
+        box-shadow: 0px 7px 0px 0px #739552;
+        filter: drop-shadow(0px 55px 35px rgba(0, 0, 0, 0.25));
+    }
+
+.GreenBtnNoBorderBottom {
+        border: none;
+        outline: none;
+        background-color: #7FB44A;
+        padding: 10px 20px;
+        font-size: 12px;
+        font-weight: 700;
+        color: #fff;
+        border-radius: 5px;
+        transition: all ease 0.1s;
+        filter: drop-shadow(0px 55px 35px rgba(0, 0, 0, 0.25));
+    }
+
+
+    .GreenBtn:active {
+        box-shadow: 0px 0px 0px 0px #739552;
+        background-color: #b9d49e;
+    }
+
+    .GreenBtn:hover {
+        transform: translateY(2px);
+        box-shadow: 0px 5px 0px 0px #739552;
+        cursor: pointer;
+        filter: drop-shadow(0px 30px 35px rgba(0, 0, 0, 0.25));
+        transition: all 0.1s;
+    }
+
+
+    .DisabledBtn {
+        border: none;
+        outline: none;
+        background-color: #696969;
+        padding: 10px 20px;
+        font-size: 12px;
+        font-weight: 700;
+        color: #fff;
+        border-radius: 5px;
+        transition: all ease 0.1s;
+        box-shadow: 0px 7px 0px 0px #797979;
+        filter: drop-shadow(0px 55px 35px rgba(0, 0, 0, 0.25));
+    }
+
+    .DisabledBtn:active {
+        box-shadow: 0px 0px 0px 0px #858585;
+        background-color: #797979;
+    }
+
+    .DisabledBtn:hover {
+        transform: translateY(2px);
+        box-shadow: 0px 5px 0px 0px #5e5e5e;
+        cursor: pointer;
+        filter: drop-shadow(0px 30px 35px rgba(0, 0, 0, 0.25));
+        transition: all 0.1s;
+    }
+
+
+    .RedBtn {
+        border: none;
+        outline: none;
+        background-color: #b92828;
+        padding: 10px 20px;
+        font-size: 12px;
+        font-weight: 700;
+        color: #fff;
+        border-radius: 5px;
+        transition: all ease 0.1s;
+        box-shadow: 0px 7px 0px 0px #862c2c;
+        filter: drop-shadow(0px 55px 35px rgba(0, 0, 0, 0.25));
+    }
+
+    .RedBtn:active {
+        filter: brightness(110%);
+        background-color: #b93434;
+        box-shadow: 0px 0px 0px 0px #862c2c;
+    }
+
+    .RedBtn:hover {
+        transform: translateY(2px);
+        box-shadow: 0px 5px 0px 0px #862c2c;
+        cursor: pointer;
+        filter: drop-shadow(0px 30px 35px rgba(0, 0, 0, 0.25));
+        transition: all 0.1s;
+    }
+
+
+    .Widget {
+        backdrop-filter: brightness(0.15);
+    }
+
+
+
+
+    .radio-inputs {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 0.5rem;
+        background-color: #EEE;
+        box-sizing: border-box;
+        box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+        padding: 0.25rem;
+        font-size: 14px;
+        filter: drop-shadow(0px 12px 35px rgba(0, 0, 0, 0.25));
+    }
+
+    .radio-inputs .radio {
+        flex: 1 1 auto;
+        text-align: center;
+    }
+
+    .radio-inputs .radio input {
+        display: none;
+    }
+
+    .radio-inputs .radio .name {
+        display: flex;
+        cursor: pointer;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.5rem;
+        border: none;
+        padding: .5rem 0;
+        color: rgba(51, 65, 85, 1);
+        transition: all .15s ease-in-out;
+    }
+
+    .radio-inputs .radio input:checked+.name {
+        background-color: #fff;
+        font-weight: 600;
+    }
+
+
+    .radio-inputs .radio input:checked+.colorChoice {
+        background-color: #ffffff0c;
+        font-weight: 600;
+    }
+
+    .radio-inputs .radio .colorChoice {
+        display: flex;
+        cursor: pointer;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.5rem;
+        border: none;
+        padding: .5rem 0;
+        color: rgba(51, 65, 85, 1);
+        transition: all .15s ease-in-out;
+    }
+
+    .unselectable {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+
+
+
+}
