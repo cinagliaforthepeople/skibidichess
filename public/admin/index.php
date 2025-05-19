@@ -32,7 +32,7 @@ else if (!$sessionChecker->checkAdmin())
 
         <div class="flex flex-col w-full max-w-[280px] md:max-w-[400px]">
             <a href="./tokens.php" class="w-full">
-                <button id="Button" class="GreenBtn w-full h-12 md:h-14 text-base md:text-lg mb-4 md:mb-6">Manager (+Chat) ALPHA</button>
+                <button id="Button" class="GreenBtn w-full h-12 md:h-14 text-base md:text-lg mb-4 md:mb-6">Game Manager (PRE)</button>
             </a>
 
             <a href="./users.php" class="w-full">
