@@ -1,4 +1,4 @@
-# ♟️ SkibidiChess 🚽
+# ♟️ SkibidiChess 🚽 (New Updated Repo)
 
 
 A modern chess game built with **HTML, Tailwind CSS, JavaScript, and PHP**, featuring:  
